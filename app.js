@@ -3,7 +3,7 @@ let compScore = 0;
 const msg = document.querySelector(".msg")
 const userScoreEle = document.querySelector("#userScore")
 const compScoreEle = document.querySelector("#compScore")
-
+let resetBtn = document.querySelector("#resetBtn")
 
 const choices = document.querySelectorAll(".choice")
 
@@ -82,4 +82,15 @@ choices.forEach((choice) => {
     // console.log(`${userChoice} choice was clicked`)
     playGame(userChoice)
    })
+})
+
+resetBtn.addEventListener("click", () => {
+    userScore = 0
+    userScoreEle.innerText = userScore
+    compScore = 0
+    compScoreEle.innerText = compScore
+    msg.classList.remove("drawGameMsg")
+    msg.classList.remove("winGameMsg")
+    msg.classList.remove("loseGameMsg")
+    msg.innerText = "Play Your move"
 })

@@ -91,3 +91,90 @@ img{
    background-color: #22223b;
    cursor: pointer;
 }
+
+#resetBtn {
+    background-color: rgb(221, 155, 34);
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+@media(max-width: 571px) {
+    h1{
+        height: 3rem;
+        line-height: 3rem;
+    }
+
+    .choices{
+        gap: 1rem;
+    }
+
+    .choice{
+        height: 140px;
+        width: 140px;
+    }
+
+    img{
+       height: 125px;
+       width: 125px;
+    }
+
+    .msg{
+        font-size: 1.5rem;
+        padding: .5rem;
+        margin: 7px 0px;
+    }
+}
+
+@media(max-width: 427px) {
+    .choice{
+        height: 120px;
+        width: 120px;
+    }
+
+    img{
+       height: 105px;
+       width: 105px;
+    }
+}
+
+@media (max-width: 426px) {
+    .choices{
+        flex-direction: column;
+    }
+
+    h1{
+        height: 50px;
+        line-height: 50px;
+        font-size: 20px;
+    }
+
+    .scoreBoard{
+        font-size: 20px;
+        margin: 10px 0px;
+        gap: 3rem;
+    }
+
+    .msg{
+        font-size: 20px;
+        padding: 5px;
+        margin: 8px 0px;
+        border-radius: 10px;
+    }
+
+    #resetBtn{
+        padding: 5px;
+        border-radius: 10px;
+        font-size: 15px;
+    }
+
+    #userScore{
+        font-size: 2rem;
+    }
+
+    #compScore{
+        font-size: 2rem;
+    }
+}
