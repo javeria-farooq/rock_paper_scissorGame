@@ -1,0 +1,93 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f2e9e4;
+}
+
+h1{
+    background-color: #081b31;
+    color: white;
+    height: 5rem;
+    line-height: 5rem;
+}
+
+.choices{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 5rem;
+}
+
+.choice:hover{
+    cursor: pointer;
+    background-color: #081b31;
+}
+
+.choice{
+    border-radius: 50%;
+    width: 165px;
+    height: 165px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    border-radius: 50%;
+    object-fit: cover;
+    width: 150px;
+    height: 150px;
+}
+
+.scoreBoard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    margin: 2rem 0px;
+    gap: 5rem;
+}
+
+#userScore{
+   font-size: 4rem;
+}
+
+#compScore{
+    font-size: 4rem;
+}
+.msg{
+    background-color: #081b31;
+    color: white;
+    font-size: 2rem;
+    display: inline-block;
+    padding: 1rem;
+    border-radius: 15px; /* 15 px = 1rem*/
+    margin: 15px 0px;
+}
+
+#msg:hover{
+    cursor: pointer;
+}
+
+.drawGameMsg{
+    background-color: #081b31;
+}
+
+.loseGameMsg{
+    background-color: red;
+}
+
+.winGameMsg {
+    background-color: green;
+}
+
+.msg:hover{
+   background-color: #22223b;
+   cursor: pointer;
+}
